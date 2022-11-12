@@ -1,0 +1,112 @@
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white-paragraphs-: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: 'Big Shoulders Display', cursive;
+    background-color: var(--Very-light-gray-background-headings-buttons);
+}
+
+.conteinner{
+    width: auto;
+    height: auto;
+    display: flex;
+    margin: auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.conteinner .card{
+    padding: 35px;
+    width: 294px;
+    height: 450px;
+}
+
+.conteinner .card:nth-child(1){
+    background-color: var(--Bright-orange);
+}
+
+.conteinner .card:nth-child(2){
+    background-color: var(--Dark-cyan);
+}
+
+.conteinner .card:nth-child(3){
+    background-color: var(--Very-dark-cyan);
+}
+
+.card img{
+    width: 50px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.card h1{
+    color: var(--Very-light-gray-background-headings-buttons);
+    margin-bottom: 20px;
+}
+
+.card p{
+    color: var(--Transparent-white-paragraphs-);
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.8em;
+    opacity: 90%;
+}
+
+button{
+    margin-top: 110px;
+    width: 130px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 25px;
+    background: var(--Very-light-gray-background-headings-buttons);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid var(--Very-light-gray-background-headings-buttons) 2px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button1{
+    color: var(--Bright-orange);
+}
+
+.button2{
+    color: var(--Dark-cyan);
+}
+
+.button3{
+    color: var(--Very-dark-cyan);
+}
+
+button:hover{
+    color: var(--Transparent-white-paragraphs-);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    background: none;
+}
+
+@media (max-width: 970px){
+    .conteinner{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        margin: 20px 0;
+    }
+}
